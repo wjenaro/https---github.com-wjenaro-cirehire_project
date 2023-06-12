@@ -11,7 +11,35 @@
       {% bootstrap_javascript %}
 
       <style>
-        
+        .menu{
+            align-items: center; 
+            justify-content: center;
+        }
+        .menu_item{
+          
+            padding-right: 2rem;
+
+        }
+        .car_booking{
+            background-color: blue;
+    
+
+        }
+        .car_seaarch_header{
+            text-align: center;
+
+        }
+        .my_grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2px;
+            background-color: black;
+        }
+        .car_search_item{
+            background-color: beige;
+        }
+
       </style>
 </head>
 <body>
@@ -26,25 +54,43 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!---->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: brown;">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mt-5 mt-lg-10">
+            <li class="active menu_item"><a href="#">Home</a></li>
+            <li class="menu_item"><a href="#">Page 1</a></li>
+            <li class="menu_item"><a href="#">Page 2</a></li>
+            <li class="menu_item"><a href="#">Page 3</a></li>
           </ul>
       </div>
+      <button>Sign Up</button>
+      <button>Login</button>
       
     </div>
   </nav>
 <!---->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12" style="background-color: blue;">
-            hhh
-
+    <section>
+        <div class="row">
+            <div class="col-sm-12" style="background-color: blue;">
+                <div class="car_booking">
+                    <h1 class="car_seaarch_header"> Book</h1>
+                    <p class="car_seaarch_header">Get your Ride</p>
+                    <!--grid -->
+                    <div class="my_grid">
+                        <div class="car_search_item" style="justify-items: right;">
+                            <input type="text" style="width: 100%;">
+                        </div>
+                        <div class="car_search_item">2</div>
+                        <div class="car_search_item">3</div>
+                        <div class="car_search_item"><button>Search</button></div>
+                    </div>
+                </div>
+    
+            </div>
         </div>
-    </div>
+
+    </section>
+    
 </div>
     
 </body>
