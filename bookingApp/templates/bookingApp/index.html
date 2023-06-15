@@ -1,86 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
   
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <!--boostrap loading-->
-      {% load bootstrap5 %}
-      {% bootstrap_css %}
-      {% bootstrap_javascript %}
-
+    <link rel="stylesheet" href="{% static 'bookingApp/style.css' %}">
       <style>
-        .menu{
-            align-items: center; 
-            justify-content: center;
-        }
-        /**/
-        .menu_item{
-          
-            padding-right: 2rem;
-        }
    
-        .car_seaarch_header{
-            text-align: center;
-
-        }
-        .my_grid{
-            display:flex;
-            flex-direction: row;
-            gap:1rem;
-           
-          
-        }
-        .car_search_item{
-            width: 25%;
-            
-        }
-        @media (max-width: 800px) {
-            .my_grid {
-                flex-direction: column;
-               
-
-            }
-            /* extend the items to 100%*/
-            .car_search_item{
-                width: 100%;
-                }
-            }
-label{
-    display: block;
-}
-input{
-    width: 100%;
-}
       </style>
 </head>
 <body>
 <!--nav section-->
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">CarHire Geek</a>
-      </div>
-      <!---->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!---->
-      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-        <ul class="nav navbar-nav mt-5 mt-lg-10">
-            <li class="active menu_item"><a href="#">Home</a></li>
-            <li class="menu_item"><a href="#">Page 1</a></li>
-            <li class="menu_item"><a href="#">Page 2</a></li>
-            <li class="menu_item"><a href="#">Page 3</a></li>
-          </ul>
-      </div>
-      <button>Sign Up</button>
-      <button>Login</button>
-      
-    </div>
-  </nav>
-<!---->
+
 <div class="container-fluid">
     <section>
         <div class="row">
