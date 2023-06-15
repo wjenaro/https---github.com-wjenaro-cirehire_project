@@ -30,16 +30,21 @@
 
         }
         .my_grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 2px;
-            background-color: black;
+            display:flex;
+            flex-direction: row;
+            gap:1rem;
+           
+          
         }
         .car_search_item{
-            background-color: beige;
+            background-color: rgb(239, 220, 245);
         }
-
+label{
+    display: block;
+}
+input{
+    width: 100%;
+}
       </style>
 </head>
 <body>
@@ -71,7 +76,7 @@
 <div class="container-fluid">
     <section>
         <div class="row">
-            <div class="col-sm-12" style="background-color: blue;">
+            <div class="col-sm-12">
                 <div class="car_booking">
                     <h1 class="car_seaarch_header"> Book</h1>
                     <p class="car_seaarch_header">Get your Ride</p>
@@ -91,7 +96,8 @@
                         </div>
                         <div class="car_search_item"><button>Search</button></div>
                     </div>
-                </div>
+                        
+                    </div>
     
             </div>
         </div>
