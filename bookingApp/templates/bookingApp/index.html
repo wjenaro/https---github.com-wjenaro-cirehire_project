@@ -1,14 +1,9 @@
-{% load static %}
+{% extends 'bookingApp/base.html' %}
+{% block title %} Home {% endblock %}
   
-<head>
-    <link rel="stylesheet" href="{% static 'bookingApp/style.css' %}">
-      <style>
-   
-      </style>
-</head>
-<body>
-<!--nav section-->
 
+
+{% block content %}
 <div class="container-fluid">
     <section>
         <div class="row">
@@ -55,5 +50,4 @@
       // You can perform further actions like making API requests, etc.
     }
   </script>
-</body>
-</html>
+{% endblock %}
