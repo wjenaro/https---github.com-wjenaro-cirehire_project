@@ -1,5 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+'''
+homepage
+'''
 def index(request):
     return render(request, 'bookingApp/index.html')
+'''
+login page
+'''
+def login(request):
+    return render(request, 'bookingApp/login.html')
