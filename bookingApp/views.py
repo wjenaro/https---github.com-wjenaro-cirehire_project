@@ -10,3 +10,8 @@ login page
 '''
 def login(request):
     return render(request, 'bookingApp/login.html')
+'''
+Signup
+'''
+def signup(request):
+    return render(request, 'bookingApp/signup.html')
