@@ -20,11 +20,7 @@
           
             padding-right: 2rem;
         }
-        .car_booking{
-            background-color: blue;
-    
-
-        }
+   
         .car_seaarch_header{
             text-align: center;
 
@@ -37,8 +33,20 @@
           
         }
         .car_search_item{
-            background-color: rgb(239, 220, 245);
+            width: 25%;
+            
         }
+        @media (max-width: 800px) {
+            .my_grid {
+                flex-direction: column;
+               
+
+            }
+            /* extend the items to 100%*/
+            .car_search_item{
+                width: 100%;
+                }
+            }
 label{
     display: block;
 }
