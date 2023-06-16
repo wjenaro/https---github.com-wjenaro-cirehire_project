@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #my apps
     'bookingApp',
     'bootstrap5',
+    'userApp',
     
     # ...
 ]
