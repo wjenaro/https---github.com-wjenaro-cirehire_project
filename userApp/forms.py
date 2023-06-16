@@ -4,9 +4,11 @@ from django.contrib.auth.models import User
 
 
 class RegisterForm(UserCreationForm):
-    firstname=forms
-    email = forms.EmailField()
+    firstname=forms.CharField(max_length=100)
+    lastname=forms.CharField(max_length=100)
+    email = forms.EmailField(max_length=100)
+    tel=forms.CharField(max_length=20)
 
     class Meta:
         model = User
-        fields = ["username", "email", "password1", "password2"]
+        fields = ["firstname", "lastname", "username", "email","tel", "password1", "password2"]
