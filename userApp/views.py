@@ -9,7 +9,7 @@ def register(response):
         if form.is_valid():
             form.save()
             '''
-            Needs fixing -- not redirecting to the right page 
+            good, fixed
             '''
         return redirect('/')
     else:
