@@ -14,7 +14,8 @@ class CarOwner(models.Model):
     first_name = models.CharField(max_length=50)
     second_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    contact_info = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    tel=models.CharField(max_length=100)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
